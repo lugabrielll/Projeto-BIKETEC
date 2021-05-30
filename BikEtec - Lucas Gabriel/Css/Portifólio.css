@@ -1,0 +1,312 @@
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Estilização geral do site*/
+a{
+    text-decoration: none /*decoração do texto*/
+}
+/* Header*/
+header{
+    background-color:#FEC63E;
+    padding: 10px 0px;
+    border-bottom: 2px solid black;
+}
+/*Menu*/
+.header_menu{
+    display: inline-block; /*colodar os elementos em linha*/
+    margin-top: 25px;
+    text-align: right;
+}
+.header_menu ul li{
+    display: inline-block;
+}
+.header_menu li a{
+    color: black;
+    font-weight: bold; /*negrito*/
+    font-size: 15px;
+    padding: 15px; /*Cria um espaçamento entre os elementos ou borda*/
+    text-transform: uppercase; /*Deixar os caracteres em caixa alta*/
+    transition: 0.2s;
+}
+.header_menu li a:hover{/*Cursor do mouse*/
+    color: rgb(255, 255, 255); /*sobra - Lado - Baixo - Borrar*/
+    transition: 0.2s;
+  
+}
+body{
+    height: 100%;
+}
+
+/* INTRO */
+
+.intro_port{
+    background-image: url("../Img/bg-portifolio.jpg");
+    height: 180px;
+    background-repeat: no-repeat; /*Para a imagem não se repetir*/
+    background-size: cover; /*Expandiu a imagem*/
+    background-position: top;
+    text-align: center;
+    padding-top: 40px;
+}
+.intro_port h1{
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+}
+
+.intro_port p{
+    color: #FFF;
+    text-shadow: 2px 2px 4px black;
+    font-size: 18px;
+}
+
+.intro_port p::before{
+    content: "";
+    background-color: #fff;
+    height: 3px;
+    width: 80px;
+    display: block;
+    margin: 15px auto;
+    
+}
+.citacao1{
+     width: 40%;
+     background-color: rgb(255, 255, 255);
+     text-align: center;
+     display: block;
+     margin: auto;
+     letter-spacing: .1em; 
+     line-height: 19px; 
+     font-weight: bold;
+     font-size: 17px; 
+     padding-top: 60px;
+     padding-bottom: 60px;
+     font-style:italic;
+     
+     
+ }
+blockquote cite{
+    color: rgb(216, 20, 20);
+    line-height: 15px;
+    padding-top: 35px;
+    text-align: right;
+    display:block;
+
+}
+.backfoto1{
+    background-color: #000;
+    height:660px;
+
+    padding-bottom: 3px;
+
+}
+.foto1{
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.foto2{
+    padding-top:30px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.backfoto2{
+    background-color: #000;
+    height: 350px;
+}
+.foto3{
+    padding-top:30px;
+    display: flex;
+    justify-content: center;
+    padding-left: 25%;
+
+}
+
+    /* RODAPÉ - SITE  */
+.img_citacao{
+    width: 100%;
+    height: 250px;
+    display: block;
+    position:relative;
+    text-align:center;
+    background-image: url("../Img/bg-footer.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: top;
+    border-top: black 2px solid;
+}
+.citacao2{
+    height: 100%;
+    width: 100%;
+    text-align: center; 
+    padding: 50px 30%;   
+    position:absolute;
+}
+.citacao2 p{
+    font-size: 110%;
+    color:#fff;
+    display:block;
+    position: relative;
+    letter-spacing: .1em; 
+    line-height: 22px; 
+}
+.citacao2 p::after, .citacao2 p::before{
+    content: "";
+    width: 150px;
+    height: 3px;
+    display: block;
+    background-color: #FFF;
+    margin: 20px auto;
+    position:relative;
+}
+.citacao2 cite{
+    display: block;
+    padding-top: 2%;
+    text-align: end;
+    font-size: 110%;
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color:#000;
+    display: block;
+    position: relative;
+}
+.rodape1{
+    display: block;
+    position: absolute;
+    height: 300px;
+    padding-top: 50px;
+    width: 40%;
+    padding-right: 10%;
+    margin-left: 5%;
+}
+.rodape2{
+    display: block;
+    position: absolute;
+    height: 300px;
+    margin-left: 45%;
+    padding-top: 50px;
+    width: 25%;
+    padding-right: 3%;
+}
+.rodape3{
+    display: block;
+    position: absolute;
+    height: 300px;
+    margin-left: 70%;
+    padding-top: 50px;
+    width: 30%;
+}
+footer p{
+    color:rgb(255, 255, 255);
+    line-height: 25px; 
+    margin-left: 7%;
+    font-size: 105%;
+}
+.titulo_rodape{
+    color:#FEC63E;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 130%;
+    font-weight: bold;
+    margin-left: 7%;
+}
+.titulo_rodape::after{
+    content: "";
+    width: 112px;
+    height: 3px;
+    display: block;
+    background-color: #FEC63E;
+    margin: 10px 0px;
+    position:relative;
+}
+.facebook{
+    border: solid 2px #FEC63E;
+    padding:8px;
+    margin-left: 7%;
+    text-decoration: none;
+    border-radius: 4px;
+    position:relative;
+    transition: 0.2s;
+}
+.instagram{
+    border: solid 2px #FEC63E;
+    padding:8px;
+    margin-left: 2%;
+    text-decoration: none;
+    border-radius: 4px;
+    position:relative;
+    transition: 0.2s;
+}
+.twitter{
+    border: solid 2px #FEC63E;
+    border-radius: 4px;
+    padding:8px;
+    margin-left: 2%;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.facebook:hover{
+    box-shadow:0px 0px 10px #FEC63E;
+    transition: 0.2s;
+    background-color:#fec43e2f;
+}
+.instagram:hover{
+    box-shadow:0px 0px 10px #FEC63E;
+    transition: 0.2s;
+    background-color:#fec43e2f;
+}
+.twitter:hover{
+    box-shadow:0px 0px 10px #FEC63E;
+    transition: 0.2s;
+    background-color:#fec43e2f;
+}
+.rodape4{
+    background-color: #FEC63E;
+    width: 100%;
+    height: 50px;
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 18px;
+}
+.rodape4 p{
+    color:black;
+    font-size: 97%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* SCROLLBAR
+::-webkit-scrollbar{
+    width:5px; 
+}
+::-webkit-scrollbar-track{
+    border:4px solid black
+}
+::-webkit-scrollbar-thumb{
+    background: #eeeeee;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-button{
+    height: 2px;
+    background-color:#000000;
+    position: absolute;
+}
+ */
+
+
+
+
+
+
+
+
